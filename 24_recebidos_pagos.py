@@ -1,0 +1,4 @@
+'''Sempre que Samela faz comprinhas na Shopee, ela precisa pagar um frete de R$ 20,00 se o valor da compra for inferior a R$ 100,00. Caso o valor da compra seja igual ou superior a R$ 100,00, o frete é gratuito.
+Objetivo: Desenvolver um programa que receba o valor da compra feita por Samela e informe se ela precisará pagar o frete e qual o valor total da compra. Caso precise, o programa também deve mostrar quanto faltou para conseguir o frete.
+Regras: Se o valor da compra for igual ou superior a R$ 100,00, Samela recebe frete grátis. Caso o valor da compra seja inferior a R$ 100,00, será cobrado um frete de R$ 20,00.
+'''

@@ -1,0 +1,3 @@
+'''Após descobrir quem fez bullying contra um de nossos companheiros alguns alunos se juntaram para ter uma conversa gentil e amigável com o agressor, fora das dependências e responsabilidades do Senac. Para evitar covardias decidiram que apenas o maior do grupo iria dialogar com o agressor.
+Desenvolva um sistema que receba a altura, de um número indeterminado de alunos, e defina qual deles é o maior e qual é o menor. O sistema deve dizer quantas pessoas foram cadastradas.
+'''

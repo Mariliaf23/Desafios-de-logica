@@ -1,0 +1,2 @@
+'''Crie um programa que mostre uma mensagem de boas vindas personalizada.
+“Olá mundo, aqui vamos nós iniciar no universo da programação!”'''
