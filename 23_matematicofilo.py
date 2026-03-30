@@ -2,3 +2,24 @@
 Objetivo: Desenvolver um programa que receba o comprimento de três retas e verifique se elas podem formar um triângulo. Caso possam, o programa deve informar qual é o tipo de triângulo formado: equilátero, isósceles ou escaleno.
 Regras: Para que três retas formem um triângulo, a soma dos comprimentos de dois lados deve ser maior que o comprimento do terceiro lado, para todas as combinações possíveis. Se for possível formar um triângulo: O triângulo será equilátero se os três lados forem iguais. O triângulo será isósceles se dois lados forem iguais e um diferente. O triângulo será escaleno se todos os lados forem diferentes.
 '''
+
+
+# Entrada dos comprimentos das retas
+lado1 = float(input("Digite o comprimento da 1ª reta: "))
+lado2 = float(input("Digite o comprimento da 2ª reta: "))
+lado3 = float(input("Digite o comprimento da 3ª reta: "))
+
+# 1. Regra de Existência: a soma de dois lados deve ser maior que o terceiro
+if (lado1 + lado2 > lado3) and (lado1 + lado3 > lado2) and (lado2 + lado3 > lado1):
+    print("\nAs retas podem formar um triângulo!")
+    
+    # 2. Classificação do tipo de triângulo
+    if lado1 == lado2 == lado3:
+        print("Tipo: Equilátero (todos os lados são iguais).")
+    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        print("Tipo: Isósceles (dois lados são iguais).")
+    else:
+        print("Tipo: Escaleno (todos os lados são diferentes).")
+else:
+    print("\nAs retas NÃO podem formar um triângulo.")
+    print("Regra: A soma de dois lados deve ser sempre maior que o terceiro.")
