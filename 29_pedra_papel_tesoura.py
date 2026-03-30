@@ -33,7 +33,7 @@ for rodada in range(1, 4):
         print("O computador venceu esta rodada!")
         vitorias_computador += 1
 
-# Resultado Final
+# Resultado Final 
 print("\n" + "="*20)
 print(f"Placar Final: Você {vitorias_usuario} x {vitorias_computador} Computador")
 
