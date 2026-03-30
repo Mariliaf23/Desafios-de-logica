@@ -4,3 +4,18 @@ Objetivo: Desenvolver um programa que receba o valor disponível na conta de Jos
 #Ficou zerado 
 #Ou foi para o negativo
 '''
+
+# Entrada de dados
+saldo_inicial = float(input("Quanto o José tinha na conta? R$ "))
+valor_gasto = float(input("Qual foi o valor total da conta? R$ "))
+
+# Cálculo do saldo final
+saldo_final = saldo_inicial - valor_gasto
+
+# Verificação do status da conta
+if saldo_final > 0:
+    print(f"\nO saldo continuou POSITIVO: R$ {saldo_final:.2f}")
+elif saldo_final == 0:
+    print("\nO saldo ficou ZERADO. Foi na conta certa!")
+else:
+    print(f"\nO saldo foi para o NEGATIVO: R$ {saldo_final:.2f}")
