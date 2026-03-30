@@ -7,3 +7,39 @@ O usuário deve:
 # Receber o resultado
 # Indicar se deseja continuar a conta
 '''
+
+
+# Inicialização
+resultado = float(input("Digite o primeiro número: "))
+
+while True:
+    print("\nOperações: [+] Somar | [-] Subtrair | [*] Multiplicar | [/] Dividir")
+    operacao = input("Qual operação deseja realizar? ")
+    
+    proximo_numero = float(input("Digite o próximo número: "))
+
+    # Processamento da operação
+    if operacao == '+':
+        resultado += proximo_numero
+    elif operacao == '-':
+        resultado -= proximo_numero
+    elif operacao == '*':
+        resultado *= proximo_numero
+    elif operacao == '/':
+        if proximo_numero != 0:
+            resultado /= proximo_numero
+        else:
+            print("Erro: Divisão por zero não permitida!")
+            continue
+    else:
+        print("Operação inválida!")
+        continue
+
+    print(f"\nResultado atual: {resultado}")
+
+    # Condição de continuidade
+    continuar = input("Deseja continuar a conta? (s/n): ").lower()
+    if continuar != 's':
+        break
+
+print(f"\nCalculadora encerrada. Resultado final: {resultado}")
